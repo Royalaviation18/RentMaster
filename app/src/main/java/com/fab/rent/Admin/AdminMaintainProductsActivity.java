@@ -12,7 +12,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.fab.rent.R;
-import com.fab.rent.Seller.SellerProductCategoryActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -80,7 +79,7 @@ public class AdminMaintainProductsActivity extends AppCompatActivity {
 
                 if(task.isSuccessful())
                 {
-                    Intent intent = new Intent(AdminMaintainProductsActivity.this, SellerProductCategoryActivity.class);
+                    Intent intent = new Intent(AdminMaintainProductsActivity.this, AdminHomeActivity.class);
                     startActivity(intent);
                     finish();
                     Toast.makeText(AdminMaintainProductsActivity.this,"The Product has been Deleted Successfully",Toast.LENGTH_SHORT).show();
@@ -128,7 +127,7 @@ public class AdminMaintainProductsActivity extends AppCompatActivity {
                     {
                         Toast.makeText(AdminMaintainProductsActivity.this,"Changes have been applied Successfully",Toast.LENGTH_SHORT).show();
 
-                        Intent intent=new Intent(AdminMaintainProductsActivity.this, SellerProductCategoryActivity.class);
+                        Intent intent=new Intent(AdminMaintainProductsActivity.this, AdminHomeActivity.class);
                         startActivity(intent);
                         finish();
                     }

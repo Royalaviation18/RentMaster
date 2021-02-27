@@ -51,11 +51,9 @@
         <activity android:name=".Seller.SellerOrderApprovalActivity" />
         <activity android:name=".User.UserViewProductActivity" />
         <activity android:name=".Seller.SellerCategoryActivity" />
-        <activity android:name=".ProductDetailsActivity" />
         <activity android:name=".User.UserHome" />
         <activity android:name=".User.SettingsActivity" />
         <activity android:name=".Seller.SellerRegistrationActivity" />
-        <activity android:name=".Seller.SellerProductCategoryActivity" />
         <activity android:name=".Seller.SellerLoginActivity" />
         <activity android:name=".Seller.SellerHomeActivity" />
         <activity android:name=".Seller.SellerAddNewProductActivity" />
@@ -63,7 +61,6 @@
         <activity android:name=".mainHomeAct" />
         <activity android:name=".User.ConfirmFinalOrderActivity" />
         <activity android:name=".CheckNewProductsActivity" />
-        <activity android:name=".CartActivity" />
         <activity android:name=".Admin.AdminUserProductsActivity" />
         <activity android:name=".Admin.AdminNewOrdersActivity" />
         <activity android:name=".Admin.AdminMaintainProductsActivity" />
