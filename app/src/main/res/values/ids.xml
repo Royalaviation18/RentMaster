@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item
+        type="id"
+        name="shipment_phone_no"/>
+    <item
+        type="id"
+        name="shipment_address"/>
+
+
+    <item
+        type="id"
+        name="shipment_city" />
+
+</resources>

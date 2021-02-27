@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "15806356304",
+    "project_id": "rent-f3c76",
+    "storage_bucket": "rent-f3c76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15806356304:android:1e00a365507c08b106aa55",
+        "android_client_info": {
+          "package_name": "com.fab.rent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15806356304-47m3697s99hjjoocmll6pnahujcm7lp3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fab.rent",
+            "certificate_hash": "f6080b5f7cf4af9a1068d666c22532f5807af49b"
+          }
+        },
+        {
+          "client_id": "15806356304-05p5vmee5a1e38o7vr58mjj0c37jgrlh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE9I-fO09axGHbBrMLp-u_m3vip1NJ3mE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15806356304-05p5vmee5a1e38o7vr58mjj0c37jgrlh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

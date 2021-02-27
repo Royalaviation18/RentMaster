@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.UserViewProductActivity">
+
+    <ImageView
+        android:id="@+id/p_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/p_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_image_details"
+        android:text="Product Name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingLeft="15dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/p_description_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_name_details"
+        android:text="Product Description"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textFontWeight="5"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/p_price_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_description_details"
+        android:text="Product Day Price"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textFontWeight="5"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/p_week_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Week Price"
+        android:textSize="12sp"
+        android:layout_below="@id/p_price_details"
+        android:textColor="@color/black"
+        android:layout_marginLeft="45dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/p_month_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Month Price"
+        android:textSize="12sp"
+        android:layout_below="@id/p_price_details"
+        android:layout_toRightOf="@id/p_week_price"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p_price_details"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttons"
+        android:onClick="setDate"
+        android:text="Set Starting Date"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p_price_details"
+        android:layout_marginLeft="209dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttons"
+        android:onClick="setEndingDate"
+        android:text="Set Ending Date"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@id/button1"/>
+
+    <TextView
+        android:id="@+id/tv_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@id/tv_start_date"/>
+
+
+
+    <TextView
+        android:id="@+id/date_diff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@id/tv_end_date"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/p_add_to_cart_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/input_design"
+        android:text="Place Order"
+        android:padding="20sp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

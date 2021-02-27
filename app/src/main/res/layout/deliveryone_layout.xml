@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/user_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:text="User Phone Number"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/totalprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_phonenumber"
+            android:layout_centerInParent="false"
+            android:gravity="center"
+            android:text="Total Price"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalprice"
+            android:layout_centerInParent="false"
+            android:gravity="center"
+            android:text="Addres, City"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:layout_centerInParent="false"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/seller_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_centerInParent="false"
+            android:gravity="center"
+            android:text="Seller Address"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/seller_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seller Name"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/seller_add"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/seller_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:text="Seller Phone Number"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/seller_add"
+            android:textSize="14dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

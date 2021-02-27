@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/history_seller_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/seller_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:text="Phone Number"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/seller_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seller_phone_number"
+            android:layout_centerInParent="false"
+            android:gravity="center"
+            android:text="Total Price"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/seller_adress_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seller_total_price"
+            android:layout_centerInParent="false"
+            android:gravity="center"
+            android:text="Addres, City"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/seller_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seller_adress_city"
+            android:layout_centerInParent="false"
+            android:gravity="center"
+            android:text="Date Time"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/seller_security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seller_date_time"
+            android:layout_centerInParent="false"
+            android:gravity="center"
+            android:text="Security Amount"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_view_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl10"
+        android:background="@drawable/input_design"
+        android:text="View Feedback"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

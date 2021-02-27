@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/rll6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/black">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shipped Orders"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttons"
+            />
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seller_home_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rll6">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

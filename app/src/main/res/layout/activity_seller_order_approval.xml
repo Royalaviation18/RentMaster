@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seller.SellerOrderApprovalActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rll7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:id="@+id/tv_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Orders"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" />
+
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rll7"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seller.SellerCategoryActivity">
+
+    <TextView
+        android:id="@+id/tv_cat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="Select Category" />
+
+    <!-- Spinner Dropdown -->
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="10dip"
+        android:entries="@array/category_type"
+        android:layout_below="@id/tv_cat"/>
+
+    <!-- Select Label -->
+
+    <TextView
+        android:id="@+id/tv_subcat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="Select SubCategory"
+        android:layout_below="@id/spinner1"/>
+
+    <!-- Spinner Dropdown -->
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_below="@id/tv_subcat"
+        />
+
+    <Button
+        android:id="@+id/category_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Submit"
+        android:layout_below="@id/spinner2"
+        android:background="@drawable/buttons"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/security_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_btn"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

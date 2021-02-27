@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/seller_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/seller_order_approval"
+        android:icon="@drawable/approval"
+        android:title="Approvals"
+        />
+
+    <item
+        android:id="@+id/seller_order_history"
+        android:icon="@drawable/history"
+        android:title="History"
+        />
+
+
+
+    <item
+        android:id="@+id/seller_logout"
+        android:icon="@drawable/logout"
+        android:title="Logout"/>
+
+</menu>
