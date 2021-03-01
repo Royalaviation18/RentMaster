@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.fab.rent.CheckNewProductsActivity;
 import com.fab.rent.MainActivity;
 import com.fab.rent.R;
 import com.fab.rent.mainHomeAct;

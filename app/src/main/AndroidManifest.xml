@@ -60,7 +60,7 @@
         <activity android:name=".SearchProductActivity" />
         <activity android:name=".mainHomeAct" />
         <activity android:name=".User.ConfirmFinalOrderActivity" />
-        <activity android:name=".CheckNewProductsActivity" />
+        <activity android:name=".Admin.CheckNewProductsActivity" />
         <activity android:name=".Admin.AdminUserProductsActivity" />
         <activity android:name=".Admin.AdminNewOrdersActivity" />
         <activity android:name=".Admin.AdminMaintainProductsActivity" />

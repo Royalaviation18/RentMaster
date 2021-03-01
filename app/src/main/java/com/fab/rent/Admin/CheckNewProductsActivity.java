@@ -1,7 +1,9 @@
-package com.fab.rent;
+package com.fab.rent.Admin;
 
 import android.content.DialogInterface;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.fab.rent.Model.Products;
+import com.fab.rent.R;
 import com.fab.rent.ViewHolder.ProductViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -79,6 +82,8 @@ public class CheckNewProductsActivity extends AppCompatActivity {
                                 if(i==0)
                                 {
                                     ChangeProductState(productID);
+                                    Intent intent =new Intent(CheckNewProductsActivity.this, AdminHomeActivity.class);
+                                    startActivity(intent);
                                 }
                                 if(i==1)
                                 {
