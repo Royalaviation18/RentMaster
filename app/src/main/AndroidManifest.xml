@@ -18,11 +18,11 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Rent"
         tools:replace="android:theme">
-        <activity android:name=".Seller.SellerHoActivity"></activity>
+        <activity android:name=".Seller.SellerHoActivity"/>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,9 +39,6 @@
         <activity android:name=".DeliveryBoy.DeliveryRegistrationActivity" />
         <activity android:name=".User.ResetPasswordActivity" />
         <activity android:name=".Chatbot.ChatbotActivity" />
-        <activity android:name=".Chatbot.chatbot" />
-        <activity android:name=".Navigation.UserHme" />
-        <activity android:name=".Navigation.UsrHome" />
         <activity android:name=".Seller.SellerViewfeedbackActivity" />
         <activity android:name=".User.UserFeedbackActivity" />
         <activity android:name=".User.UserOrderHistoryActivity" />
@@ -55,7 +52,6 @@
         <activity android:name=".User.SettingsActivity" />
         <activity android:name=".Seller.SellerRegistrationActivity" />
         <activity android:name=".Seller.SellerLoginActivity" />
-        <activity android:name=".Seller.SellerHomeActivity" />
         <activity android:name=".Seller.SellerAddNewProductActivity" />
         <activity android:name=".SearchProductActivity" />
         <activity android:name=".mainHomeAct" />
