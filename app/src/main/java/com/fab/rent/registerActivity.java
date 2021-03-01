@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,7 +25,7 @@ import java.util.HashMap;
 public class registerActivity extends AppCompatActivity {
 
     private Button Createaccountbutton;
-    private EditText Inputname,Inputphoneno,Inputpassword;
+    private EditText Inputname,Inputphoneno,Inputemail,InputAadhar,Inputpassword,InputConfirm;
     ProgressDialog loadingbar;
 
 
@@ -37,7 +38,10 @@ public class registerActivity extends AppCompatActivity {
         Createaccountbutton=(Button)findViewById(R.id.register_btn);
         Inputname=(EditText)findViewById(R.id.register_username_input);
         Inputphoneno=(EditText)findViewById(R.id.register_phone_number);
+        Inputemail=(EditText)findViewById(R.id.register_email);
+        InputAadhar=(EditText)findViewById(R.id.register_adhaar_input);
         Inputpassword=(EditText)findViewById(R.id.register_password_input);
+        InputConfirm=(EditText)findViewById(R.id.register_confirm_password);
         loadingbar=new ProgressDialog(this);
 
         Createaccountbutton.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +58,10 @@ public class registerActivity extends AppCompatActivity {
     {
         String name=Inputname.getText().toString();
         String phone=Inputphoneno.getText().toString();
+        String email=Inputemail.getText().toString();
+        String aadhar=InputAadhar.getText().toString();
         String password=Inputpassword.getText().toString();
+        String cpassword=InputConfirm.getText().toString();
 
         if(name.isEmpty())
         {
@@ -75,11 +82,54 @@ public class registerActivity extends AppCompatActivity {
             Inputphoneno.requestFocus();
             return;
         }
+        if(email.isEmpty())
+        {
+            Inputemail.setError("Please Enter Your Email Id");
+            Inputemail.requestFocus();
+            return;
+        }
+        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches())
+        {
+            Inputemail.setError("Please Provide a Valid Email Id");
+            Inputemail.requestFocus();
+            return;
+        }
+        if(aadhar.isEmpty())
+        {
+            InputAadhar.setError("Please Provide your Aadhar no!");
+            InputAadhar.requestFocus();
+            return;
+        }
+        if(aadhar.length()!=12)
+        {
+            InputAadhar.setError("Aadhar no consits of only 12 digits,Please check you aadhar no");
+            InputAadhar.requestFocus();
+            return;
+        }
 
         if(password.isEmpty())
         {
             Inputpassword.setError("Please Enter a password!");
             Inputphoneno.requestFocus();
+            return;
+        }
+        if(password.length()<6)
+        {
+            Inputpassword.setError("Password should be of minimum 6 characters");
+            Inputpassword.requestFocus();
+            return;
+        }
+        if(cpassword.isEmpty())
+        {
+            InputConfirm.setError("Please Confirm Your password");
+            InputConfirm.requestFocus();
+            return;
+        }
+        if(!cpassword.equals(password))
+        {
+            InputConfirm.setError("Passwords do not match");
+            InputConfirm.requestFocus();
+            return;
         }
         else
         {
@@ -88,11 +138,11 @@ public class registerActivity extends AppCompatActivity {
             loadingbar.setCanceledOnTouchOutside(false);
             loadingbar.show();
 
-            ValidationNumber(name,phone,password);
+            ValidationNumber(name,phone,password,email,aadhar);
         }
     }
 
-    private void ValidationNumber(final String name, final String phone, final String password)
+    private void ValidationNumber(final String name, final String phone, final String password,final String email,final String aadhar)
     {
 
         final DatabaseReference Rooted;
@@ -108,6 +158,8 @@ public class registerActivity extends AppCompatActivity {
                     userdataMap.put("phone",phone);
                     userdataMap.put("password",password);
                     userdataMap.put("name",name);
+                    userdataMap.put("email",email);
+                    userdataMap.put("aadhar",aadhar);
 
                     Rooted.child("Users").child(phone).updateChildren(userdataMap)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -82,9 +83,21 @@ public class DeliveryRegistrationActivity extends AppCompatActivity {
             emailInput.requestFocus();
             return;
         }
+        if(!Patterns.EMAIL_ADDRESS.matcher(Email).matches())
+        {
+            emailInput.setError("Please Provide a Valid Email");
+            emailInput.requestFocus();
+            return;
+        }
         if(Password.isEmpty())
         {
             passwordInput.setError("Please Enter the password!");
+            passwordInput.requestFocus();
+            return;
+        }
+        if(Password.length()<6)
+        {
+            passwordInput.setError("Password should be of minimum 6 characters");
             passwordInput.requestFocus();
             return;
         }

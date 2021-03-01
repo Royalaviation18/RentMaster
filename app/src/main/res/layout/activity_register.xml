@@ -114,7 +114,7 @@
         android:hint="Adhaar No."
         android:textFontWeight="1"
         android:drawableRight="@drawable/government"
-        android:inputType="textPassword"
+        android:inputType="number"
         android:padding="20dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
