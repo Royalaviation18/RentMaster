@@ -11,7 +11,7 @@
         android:title="Search"/>
     <item
         android:id="@+id/nav_myrentals"
-        android:icon="@drawable/ic_baseline_chat_24"
+        android:icon="@drawable/history"
         android:title="My Orders"/>
     <item
         android:id="@+id/nav_settings"
