@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/productdescription"
-        android:text="@string/add_productm"
+        android:text="Confirm Delivery"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
         android:padding="17dp"

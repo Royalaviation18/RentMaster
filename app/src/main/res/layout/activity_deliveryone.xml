@@ -18,7 +18,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Deliveries Phase One"
+            android:text="Delivery"
             android:textColor="@color/white"
             android:textSize="25dp"
             android:textAlignment="center"
