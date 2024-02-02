@@ -59,7 +59,7 @@ but some only rent properties, some only rent furniture or some will only rent c
 
 
 
-
+## Logo
 ![Logo](https://github.com/Royalaviation18/RentMaster/blob/master/appScreenshots/rentLogo.jpg)
 
 
